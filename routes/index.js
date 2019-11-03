@@ -5,5 +5,23 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+router.get('/index.html', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
+router.get('/login.html', function(req, res, next) {
+  res.render('login', { title: 'Express' });
+});
+router.get('/blank.html', function(req, res, next) {
+  res.render('blank', { title: 'Express' });
+});
+router.get('/checkout.html', function(req, res, next) {
+  res.render('checkout', { title: 'Express' });
+});
+router.get('/register.html', function(req, res, next) {
+  res.render('register', { title: 'Express' });
+});
+router.get('/search.html', function(req, res, next) {
+  res.render('search', { title: 'Express' });
+});
 module.exports = router;
