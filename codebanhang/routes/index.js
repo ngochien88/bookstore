@@ -8,7 +8,9 @@ router.get('/', function(req, res, next) {
 router.get('/index.html', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-
+router.get('/index.html#', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 router.get('/login.html', function(req, res, next) {
   res.render('login', { title: 'Express' });
 });
